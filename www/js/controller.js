@@ -1,4 +1,17 @@
 var fbook = angular.module('foodbookpro');
+
+//login controller
+fbook.controller('signUpController',function($scope,authService){
+    $scope.user;
+  $scope.createUser = authService.createUser;
+});
+
+//login controller
+fbook.controller('loginController',function($scope,authService){
+  $scope.user;
+  $scope.loginUser = authService.userLogin;
+});
+
 //add controller
 fbook.controller('addController',function($scope,$state,recipeService){
 

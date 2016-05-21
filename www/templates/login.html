@@ -1,0 +1,35 @@
+<ion-view view-title="FoodBookPro login">
+  <ion-content class="myContent">
+    <div class="row">
+      <div class="col item-body"><img src="../img/food-drink-17.jpg" class="full-image" alt="Food Book Pro"/></div>
+    </div>
+    <div class="row">
+      <div class="col">
+        <label class="item item-input">
+          <i class="icon ion-email placeholder-icon"></i>
+          <span class="input-label">Email</span>
+          <input type="email" ng-model="user.email">
+        </label>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col">
+        <label class="item item-input">
+          <i class="icon ion-unlocked placeholder-icon"></i>
+          <span class="input-label">Password</span>
+          <input type="password" ng-model="user.password">
+        </label>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col">
+        <button class="button button-full button-outline button-stable" ng-click="loginUser(user)"><i class="icon ion-android-person"></i> login</button>
+      </div>
+      <div class="col">
+        <button class="button button-full button-outline button-stable" ui-sref="sign-up"><i class="icon ion-android-person"></i> Sign up</button>
+      </div>
+    </div>
+  </ion-content>
+</ion-view>
+

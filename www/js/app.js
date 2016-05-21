@@ -25,6 +25,16 @@ fbook.run(function($ionicPlatform) {
 
 
 fbook.config(function($stateProvider,$urlRouterProvider){
+  $stateProvider.state("login",{
+    url: "/login",
+    templateUrl :"../templates/login.html",
+    controller : "loginController"
+  });
+  $stateProvider.state("sign-up",{
+    url: "/sign-up",
+    templateUrl :"../templates/signUp.html",
+    controller : "signUpController"
+  });
   $stateProvider.state("home",{
     url: "/",
     templateUrl :"../templates/home.html"
@@ -60,6 +70,6 @@ fbook.config(function($stateProvider,$urlRouterProvider){
     controller : "recipeEditController"
   });
 
-  $urlRouterProvider.otherwise('/');
+  $urlRouterProvider.otherwise('/login');
 
 });
