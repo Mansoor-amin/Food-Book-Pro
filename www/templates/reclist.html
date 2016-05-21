@@ -1,0 +1,11 @@
+<ion-view view-title="Choose Recipe">
+  <ion-content>
+    <ion-list>
+      <ion-item class="recListing" ng-repeat="recipe in recipes">
+        <a ui-sref="singleRecipe({id:recipe.$id})" nav-direction="center">
+          <h2>{{recipe.recipeName}}</h2>
+        </a>
+      </ion-item>
+    </ion-list>
+  </ion-content>
+</ion-view>

@@ -1,0 +1,12 @@
+{
+  "name": "foodbookpro",
+  "app_id": "413b8d9e",
+  "gulpStartupTasks": [
+    "sass",
+    "watch"
+  ],
+  "watchPatterns": [
+    "www/**/*",
+    "!www/lib/**/*"
+  ]
+}

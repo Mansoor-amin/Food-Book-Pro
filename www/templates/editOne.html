@@ -1,0 +1,24 @@
+<ion-view view-title="Edit Recipe">
+  <ion-content>
+    <div class="list list-inset">
+      <label class="item item-input item-stacked-label myBorder">
+        <span class="input-label">Recipe name</span>
+        <input type="text" ng-model="title">
+      </label>
+
+      <label class="item item-input item-stacked-label myBorder">
+        <span class="input-label">Ingredients</span>
+        <textarea rows="9" cols="10" ng-model="ingredients"></textarea>
+      </label>
+
+      <label class="item item-input item-stacked-label myBorder">
+        <span class="input-label">Preparation directions</span>
+        <textarea rows="9" cols="10" ng-model="directions"></textarea>
+      </label>
+
+      <div class="item button button-block button-positive" ng-model="editButton" ng-disabled="!title||!ingredients||!directions" ng-click="updateRecipe(myid)" >
+        Save changes to Recipe
+      </div>
+      </div>
+  </ion-content>
+</ion-view>
